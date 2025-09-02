@@ -1,0 +1,77 @@
+/* กำหนดให้ body เต็มหน้าจอ */
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-size: cover;
+}
+
+/* Container หลัก */
+.container {
+    height: 100px;     /* ความสูงของ container */
+    background: #FFDAB9;  /* พื้นหลังสีฟ้า */
+    padding: 20px; /* ระยะห่างภายใน */
+    display: flex;
+    justify-content: space-between; /* ซ้าย-ขวาแยกออก */
+    align-items: center;    /* จัดกึ่งกลางแนวตั้ง */
+}
+
+/*  ส่วนของโลโก้และชื่อเว็บไซต์ */
+.logo {
+    display: flex;           /* เรียงลูกในแนวนอน */
+    align-items: center;     /* จัดกึ่งกลางแนวตั้ง */
+    gap: 15px;               /* ระยะห่างระหว่างโลโก้กับข้อความ */
+}
+
+/* เมนู */
+.menu ul {
+    list-style: none;      /* เอาจุดหน้าข้อความออก */
+    display: flex;
+    gap: 25px;               /* ระยะห่างระหว่างเมนู */
+}
+
+/*  ข้อความในเมนู */
+.menu ul li a {
+    text-decoration: none;      /* เอาเส้นใต้ออก */
+    font-size: 20px;
+    color: rgb(255, 72, 133);
+}
+
+/*  กำหนดสิ่งต่างๆใน content */
+.content {
+    height: 100px;     /* ความสูงของ content */
+    min-height: 80vh;       /* กินเต็มจอด้านล่าง */
+    background: #ffffff;  /* พื้นหลังสีฟ้า */
+    display: flex;
+    flex-direction: column; /* เรียงลูกในแนวตั้ง */
+    align-items: center;
+    padding: 20px;
+}
+
+/*  ข้อความใน content */
+.content h2 {
+    font-size: 40px;
+    color: #000000;
+}
+
+/*  ข้อความย่อยใน content */
+.content p {
+    font-size: 20px;
+    color: #ff55e3;
+    text-align: center;
+}
+
+.img {
+    display: flex;
+    gap: 20px;  /* ระยะห่างระหว่างรูปภาพ */
+    margin-top: 10px; /* เว้นระยะห่างด้านบน */
+}
+
+/*  ตกแต่งส่วนท้าย */
+.footer {
+    background-color: #FFDAB9; /* สีฟ้าเข้ม */
+    color: #000000;               /* ตัวอักษรสีขาว */
+    text-align: center;        /* จัดกึ่งกลาง */
+    padding: 20px 0;           /* ระยะห่างบน-ล่าง */
+    font-size: 14px;
+}
